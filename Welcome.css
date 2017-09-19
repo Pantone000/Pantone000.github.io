@@ -1,0 +1,54 @@
+ /*Menybar*/
+    .topmenu { 
+    position: absolute;
+    background: darkcyan;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    left: 0;
+    }
+
+    ul {
+    float: left;
+    }
+    ul a {
+    background: lightgoldenrodyellow;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 100px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow:4px 4px 4px silver;
+    border-radius: 5px;
+    }
+    ul a:hover {
+    background-color: gold;
+    }
+    ul a:active {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+     ul.showing {
+        Background: silver;
+        color: gold;
+    }
+   .showing {
+        background: gold;
+        box-shadow: none;
+    }
+#background {
+    background: url("bilder/farcry4bc.jpg");
+    position:absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    }
+#background {
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    
+    }
