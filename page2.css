@@ -1,0 +1,94 @@
+#pancake{
+    background:whitesmoke ;
+    top: 10%;
+    left:20%;
+    position: absolute;
+    height: 90%;
+    width: 60%;
+    text-align: center;
+    } 
+h1 {
+    text-shadow: 1px 1px black;
+    color: goldenrod;
+    }
+/*menybar*/
+    .topmenu { 
+    position: absolute;
+    background: darkcyan;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    left: 0;
+    }
+
+    .topmenu, ul {
+    float: left;
+    }
+    ul a {
+    background: lightgoldenrodyellow;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 100px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow:4px 4px 4px darkgray;
+    border-radius: 5px;
+    
+    }
+    ul a:hover {
+    background-color: gold;
+    }
+     ul a:active {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+     ul.showing {
+        Background: silver;
+        color: gold;
+    }
+    .showing {
+        background: gold;
+        box-shadow: none;
+    }
+
+.edge {
+    background: lightblue;
+    top:10%;
+    left: 0;
+    width: 20%;
+    height: 90%;
+    position: absolute;
+    }
+    .edge ol a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        block-size: 10px 10px;
+        text-align: center;
+        background: lightgoldenrodyellow;
+        padding: 10px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        width:150px;
+        box-shadow: 3px 3px 3px gold;
+    }
+    ol a:hover {
+        background-color: gold;
+        }
+     ol a:active {
+          transform: translate(2px, 2px);
+          box-shadow: none;
+        }
+    ol .showing {
+        Background: silver;
+        color: gold;
+    }
+.edge2 {   
+     background: lightblue;
+    top:10%;
+    right: 0;
+    width: 20%;
+    height: 90%;
+    position: absolute;
+    } 
