@@ -1,0 +1,10 @@
+table {
+    padding-left: 25%;
+    }
+ th, td {
+    border: 1px solid black;
+    background: lightcyan;
+    }
+th,td {
+    padding: 15px;
+    }
