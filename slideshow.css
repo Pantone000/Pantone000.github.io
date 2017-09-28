@@ -1,0 +1,20 @@
+#slideshow {
+    background: url("Bilder/eagle.png");
+    position: relative;
+    left: 2em;
+    top:2em;
+    width: calc(90% - 2em);
+    height: calc(85% - 2em);
+    border: 2px solid gray;
+    border-radius: 2em;
+    background-color: var(--slideshow-bg);
+    animation: slideshow 6s ease-out  infinite;
+    }
+:root {
+    --slideshow-bg: blue;
+}
+@keyframes slideshow {
+    0% { background-image: url("Bilder/TrollFace.png")}
+   50% { background-image: url("Bilder/Troll.jpg")}
+    100% { background-image: url("Bilder/eagle.png")}
+}
