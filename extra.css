@@ -1,0 +1,11 @@
+
+div div ::first-letter {
+color: darkgoldenrod;
+font-size: 2em;
+font-family: "new rocket", cursive;
+}
+
+a {
+    color: black;
+
+}

@@ -1,0 +1,48 @@
+button{
+    position: relative;
+    left: 0;
+    top: 0;
+    color: red;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 40, 50, 20);
+    outline: none;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+    animation: flee 100ms;
+    animation-fill-mode: forwards;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+@keyframes flee {
+    0% {top: 0; left:0;}
+    100% {top: 500px; left: 500px;}
+}
+
+#pancake div {
+    background: url(bilder/hjerte.png);
+    width: 100%;
+    height:100%;
+    position: cover;
+    left:100px;
+    bottom: 100px;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pancake div:hover {
+    background: url(bilder/hjerte.png);
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: center;
+}
