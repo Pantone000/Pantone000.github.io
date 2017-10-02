@@ -1,0 +1,48 @@
+#fornavn {
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+    color: gold;
+    background: lightcyan ;
+}
+#etternavn {
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+    color: gold;
+    background: lightcyan ;
+}
+#alder {
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+    color: gold;
+    background: lightcyan ;
+}
+#email {
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+    color: gold;
+    background: lightcyan ;
+}
+#skjema {
+    background: lightgrey;
+    top: 20%;
+    left: 40%;
+    width: 200px;
+    height: 250px;
+   position: center;
+   border: 1px solid red;
+}
+label {
+    color: gold;
+}
