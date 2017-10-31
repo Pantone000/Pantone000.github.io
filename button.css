@@ -27,7 +27,7 @@ button:active {
 }
 
 #pancake div {
-    background: url(bilder/hjerte.png);
+    background: url(bilder/kilroy.png);
     width: 100%;
     height:100%;
     position: cover;
@@ -39,7 +39,7 @@ button:active {
 }
 
 #pancake div:hover {
-    background: url(bilder/hjerte.png);
+    background: url(bilder/kilroy.png);
     width: 50%;
     height: 50%;
     background-repeat: no-repeat;
