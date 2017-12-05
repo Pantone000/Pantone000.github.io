@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dyrlegen.css">
+    <script src="kundeskjema.js"></script>
+    <title>Kunder til Dyrlegen</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Kundeskjema</h1>
+        Liste over kundeskjema til dyrlegen
+    </header>
+    <article>
+        <div id="liste" class="kunde">
+            <div>
+                Velg kunde
+                <span id="kundevelger"></span>
+            </div>
+        </div>
+        <div id="dyr" class="dyr">
+        </div>
+    </article>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

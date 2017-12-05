@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=webshop.css>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Webshop</h1>
+    </div>
+    <div id="pancake">
+            <img src="grønnvekt.jpg"
+            width="250px" height="200px">
+            <br> Grønn vekt til 1000 kroner!
+            <br> <span>Legg til i handlekurv</span>
+    </div>
+    <div id="bottom">
+        <ul>
+            <li>Velg vare:</li>
+            <li> Antall
+                <label>
+                    <input id="antall" type="number"> </label>
+            </li>
+            <li>Adresse
+                <label>
+                    <input id="fornavn" type="adresse"> </label>
+            </li>
+            <li>
+                <form> Bettaling
+                    <div>
+                        <input type="radio" id="contactChoice1" name="contact" value="bitcoin">
+                        <label for="contactChoice1">Bitcoin</label>
+
+                        <input type="radio" id="contactChoice2" name="contact" value="visa">
+                        <label for="contactChoice2">Visa</label>
+
+                        <input type="radio" id="contactChoice3" name="contact" value="mastercard">
+                        <label for="contactChoice3">Mastercard</label>
+                    </div>
+                    </label>
+                </form>
+            </li>
+            <li>
+                <form> Er gave
+                    <div>
+                        <input type="radio" id="contactChoice1" name="contact" value="ja">
+                        <label for="contactChoice1">Ja</label>
+
+                        <input type="radio" id="contactChoice2" name="contact" value="nei">
+                        <label for="contactChoice2">Nei</label>
+                    </div>
+                    </label>
+                </form>
+            </li>
+        </ul>
+        <center>
+            <form id="skjema">
+                <br>
+                <button id="bestill" type="button"> Bestill... </button>
+            </form>
+        </center>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li>Neste side</li><br>
+            <li>Neste side</li><br>
+            <li>Neste side</li><br>
+            <li>Neste side</li><br>
+            <li>Neste side</li><br>
+            <li>Neste side</li><br>
+        </ul>
+    </div>
+    <script> 
+        let btn = document.getElementById("bestill");
+        btn.addEventListener("click", lagreData);
+
+        function lagreData() {
+            alert("Kunne ikke bestille");
+        }
+    </script>
+</body>
+
+</html>
