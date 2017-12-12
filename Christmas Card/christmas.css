@@ -1,0 +1,40 @@
+#heaven {
+    top: 0;
+    left: 0;
+    height: 40em;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(13, 1fr) ;
+    grid-gap: 40px ;
+    grid-auto-rows: minmax(40px, auto) ;
+}
+.stars {
+    background: rgb(255, 255, 147);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#ground {
+    background: url("snowback.jpeg");
+    height: 100em;
+    width: 100%;
+    background-size: 1600px ;
+    background-repeat: no-repeat;
+    background-position-y:;
+}
+
+#santa {
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left:-200px;
+    animation: drive 3s alternate infinite;
+}
+
+@keyframes drive {
+    0% {left: -200px;}
+    100% {left: 120%;}
+}
