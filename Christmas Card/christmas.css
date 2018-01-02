@@ -1,4 +1,4 @@
-#heaven {
+#sky {
     top: 0;
     left: 0;
     height: 40em;
@@ -13,28 +13,49 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 #ground {
-    background: url("snowback.jpeg");
+    background: darkblue;
     height: 100em;
     width: 100%;
     background-size: 1600px ;
     background-repeat: no-repeat;
-    background-position-y:;
+    background-position-y:0px;
+    position: relative;
 }
 
 #santa {
-    width: 50px;
-    height: 20px;
-    background-color: red;
+    width: 50em;
+    height: 50em;
+    background:url("santa.png");
     position: absolute;
     top: 50px;
     left:-200px;
-    animation: drive 3s alternate infinite;
+    animation: drive 3s 1s linear infinite;
+    background-repeat: no-repeat;
 }
 
 @keyframes drive {
-    0% {left: -200px;}
-    100% {left: 120%;}
+    0% {left: -1000px;}
+    100% {left: 150vw;}
+}
+
+.pakke {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: red;
+    border-left:solid green 20px;
+    border-right:solid green 20px;
+    animation: drop 3s linear;
+}
+@keyframes drop {
+    0% {top:100px;}
+    100% {top: 500vh;}
 }
