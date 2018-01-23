@@ -1,0 +1,73 @@
+#main {
+    position: relative;
+}
+
+#animasjon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("bil.png");
+    width: 13em;
+    height: 10em;
+    animation: drive 3s forwards, lift 2s 3s forwards, liftdown2 2s 10s forwards, driveout 3s 12s, worker 6s 3s;
+}
+
+#heis {
+position: absolute;
+bottom: 0em;
+left: 71em;
+width: 20em;
+background: red;
+height: 25px;
+animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
+}
+
+#heis2 {
+    position: absolute;
+    bottom: 0%;
+    left: 86em;
+    width: 5em;
+    height: 20em;
+    background: grey;
+}
+
+@keyframes drive {
+    0% {transform: scaleX(-1); bottom: 0; left: 0;}
+    100% {transform: scaleX(-1); bottom: 0; left: 70em;}
+}
+
+@keyframes lift {
+    0% { bottom: 0em; left: 70em;}
+    100% { bottom: 10em; left: 70em;}
+}
+
+@keyframes liftdown {
+    0% {transform: scaleX(-1); bottom: 10em; left: 70em; }
+    100% {transform: scaleX(-1); bottom: 0%; left: 70em;}
+}
+@keyframes liftdown2 {
+    0% {transform: scaleX(-1); bottom: 11em; left: 70em; background-image: url("bil3.png"); height: 5em;}
+    100% {transform: scaleX(-1); bottom: 1em; left: 70em;background-image: url("bil3.png");height: 5em;}
+}
+
+@keyframes driveout {
+    0% { transform: scaleX(1); bottom: 1em; left: 70em; background-image: url("bil3.png"); height: 5em;}
+    100% {transform: scaleX(1); bottom: 1em; left: 0;background-image: url("bil3.png");height: 5em;}
+}
+
+#worker {
+    position: absolute;
+    bottom: 0;
+    right: -180px;
+    height: 10em;
+    width: 10em;
+    background-image: url("people2.png");
+    animation: work 7s 4s;
+}
+
+@keyframes work {
+0% {right: -180px;}
+10% {right: 0;}
+90% {right: 0;}
+100% {right:-180px;}
+}

@@ -1,0 +1,35 @@
+#main {
+    position: relative;
+}
+
+#fig {
+    position: absolute;
+    left: 0;
+    top: calc(100vh - 120px);
+    width: 113px;
+    height: 113px;
+    background-image: url("puppet.png");
+    background-position-x: 0;
+    background-position-y: -224px;
+    animation: legs 1000ms steps(8) infinite,
+     walk 12s linear alternate infinite;
+     animation-fill-mode: forwards;
+}
+
+@keyframes legs {
+    100%{ background-position-x:-894px;}
+}
+
+@keyframes walk {
+    100% { left: 70vw;}
+}
+
+#boks {
+    position: absolute;
+    left: 75vw;
+    top: calc(100vh - 50px);
+    width: 30px;
+    height: 30px;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
