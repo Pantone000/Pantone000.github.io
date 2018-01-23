@@ -9,7 +9,7 @@
     background-image: url("bil.png");
     width: 13em;
     height: 10em;
-    animation: drive 3s forwards, lift 2s 3s forwards, liftdown2 2s 10s forwards, driveout 3s 12s, worker 6s 3s;
+    animation: drive 3s forwards, lift 2s 3s forwards, liftdown2 2s 10s forwards, driveout 3s 12s forwards, worker 6s 3s;
 }
 
 #heis {
