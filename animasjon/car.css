@@ -13,13 +13,13 @@
 }
 
 #heis {
-position: absolute;
-bottom: 0em;
-left: 71em;
-width: 20em;
-background: red;
-height: 25px;
-animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
+    position: absolute;
+    bottom: 0em;
+    left: 71em;
+    width: 20em;
+    background: red;
+    height: 25px;
+    animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
 }
 
 #heis2 {
@@ -32,27 +32,74 @@ animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
 }
 
 @keyframes drive {
-    0% {transform: scaleX(-1); bottom: 0; left: 0;}
-    100% {transform: scaleX(-1); bottom: 0; left: 70em;}
+    0% {
+        transform: scaleX(-1);
+        bottom: 0;
+        left: 0;
+    }
+    100% {
+        transform: scaleX(-1);
+        bottom: 0;
+        left: 70em;
+    }
 }
 
 @keyframes lift {
-    0% { bottom: 0em; left: 70em;}
-    100% { bottom: 10em; left: 70em;}
+    0% {
+        bottom: 0em;
+        left: 70em;
+    }
+    100% {
+        bottom: 10em;
+        left: 70em;
+    }
 }
 
 @keyframes liftdown {
-    0% {transform: scaleX(-1); bottom: 10em; left: 70em; }
-    100% {transform: scaleX(-1); bottom: 0%; left: 70em;}
+    0% {
+        transform: scaleX(-1);
+        bottom: 10em;
+        left: 70em;
+    }
+    100% {
+        transform: scaleX(-1);
+        bottom: 0%;
+        left: 70em;
+    }
 }
+
 @keyframes liftdown2 {
-    0% {transform: scaleX(-1); bottom: 11em; left: 70em; background-image: url("bil3.png"); height: 5em;}
-    100% {transform: scaleX(-1); bottom: 1em; left: 70em;background-image: url("bil3.png");height: 5em;}
+    0% {
+        transform: scaleX(-1);
+        bottom: 11em;
+        left: 70em;
+        background-image: url("bil3.png");
+        height: 5em;
+    }
+    100% {
+        transform: scaleX(-1);
+        bottom: 1em;
+        left: 70em;
+        background-image: url("bil3.png");
+        height: 5em;
+    }
 }
 
 @keyframes driveout {
-    0% { transform: scaleX(1); bottom: 1em; left: 70em; background-image: url("bil3.png"); height: 5em;}
-    100% {transform: scaleX(1); bottom: 1em; left: 0;background-image: url("bil3.png");height: 5em;}
+    0% {
+        transform: scaleX(1);
+        bottom: 1em;
+        left: 70em;
+        background-image: url("bil3.png");
+        height: 5em;
+    }
+    100% {
+        transform: scaleX(1);
+        bottom: 1em;
+        left: 0;
+        background-image: url("bil3.png");
+        height: 5em;
+    }
 }
 
 #worker {
@@ -66,8 +113,16 @@ animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
 }
 
 @keyframes work {
-0% {right: -180px;}
-10% {right: 0;}
-90% {right: 0;}
-100% {right:-180px;}
+    0% {
+        right: -180px;
+    }
+    10% {
+        right: 0;
+    }
+    90% {
+        right: 0;
+    }
+    100% {
+        right: -180px;
+    }
 }

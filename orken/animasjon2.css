@@ -1,0 +1,86 @@
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#sun {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+    border-radius: 100%;
+    background-color: yellow;
+    animation: blink 1s alternate linear infinite;
+}
+
+@keyframes blink {
+    100% { transform: scale(0.87); }
+}
+
+
+#ground {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-color: khaki;
+}
+
+#mann {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 113px;
+    height: 113px;
+    background-image: url("puppet.png");
+    background-position-x: 0;
+    background-position-y: -224px;
+    animation: legs 1000ms steps(8) infinite,
+     walk 12s linear alternate infinite;
+     animation-fill-mode: forwards;
+}
+
+@keyframes legs {
+    100%{ background-position-x:-894px;}
+}
+
+/*@keyframes walk {
+    100% { left: 70vw;}
+}
+*/
+#cactus {
+    background-image: url("cactus.png");
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 60px;
+    height: 75px;
+    animation: kaktus 6s linear infinite;
+}
+
+@keyframes kaktus {
+    0% {right: 0;}
+    100% {right: 100%;}
+}
+
+#cactusen {
+    background-image: url("cactus.png");
+    position: absolute;
+    bottom: 30%;
+    right: -30vw;
+    width: 60px;
+    height: 75px;
+    animation: kaktus2 6s 3s linear infinite;
+}
+
+@keyframes kaktus2 {
+    0% {right: 0;}
+    100% {right: 100%;}
+}
