@@ -1,0 +1,18 @@
+#main {
+    text-align: center;
+    color: rgb(121, 114, 114);
+}
+
+#avatar {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#avatar div:hover {
+    transform: translate(5px, 5px)
+}
+
+#avatar div:active {
+   transform:translate(5px, 10px);
+   border: solid 2px grey;
+}
