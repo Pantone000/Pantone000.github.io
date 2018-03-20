@@ -1,13 +1,13 @@
 function setup() {
     var config = {
-        apiKey: "AIzaSyCE20eLzaxjWN5ZmTJGvHsldShjJfq-JcE",
-        authDomain: "risk-b960b.firebaseapp.com",
-        databaseURL: "https://risk-b960b.firebaseio.com",
-        projectId: "risk-b960b",
-        storageBucket: "risk-b960b.appspot.com",
-        messagingSenderId: "347698071193"
-    };
-    firebase.initializeApp(config);
+        apiKey: "AIzaSyBwRbtEH5oSHV1lscMuU84kUMJdT-i3GkY",
+        authDomain: "proveuke6.firebaseapp.com",
+        databaseURL: "https://proveuke6.firebaseio.com",
+        projectId: "proveuke6",
+        storageBucket: "proveuke6.appspot.com",
+        messagingSenderId: "263677610238"
+      };
+      firebase.initializeApp(config);
 
     let database = firebase.database();
 

@@ -1,0 +1,86 @@
+#title {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 26%, rgba(248,181,0,1) 65%, rgba(251,223,147,1) 100%);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#main {
+    top: 20%;
+    left: 0%;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+
+article {
+    border: 1px solid black;
+}
+
+#meny {
+    top: 10%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 26%, rgba(248,181,0,1) 65%, rgba(251,223,147,1) 100%);
+}
+
+#meny a {
+    display: block;
+    height: 30px;
+    width: 150px;
+    border: solid black 2px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: orange;
+    float: left;
+}
+
+#meny a:hover {
+    background: yellow;
+}
+
+#main2 {
+    top: 20%;
+    left: 0%;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+#bottom {
+    bottom: 1%;
+    left: 1%;
+    position: absolute;
+    border: solid black 1px;
+    height: 35%;
+    width: 34%;
+}
+
+ul {
+    list-style: none;
+}
+
+#bestilling {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+svg {
+    padding-right: 60%;
+}

@@ -1,0 +1,47 @@
+#chat {
+    top: 20%;
+    left:40%;
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    text-align: center;
+}
+
+#innlegg {
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+.bruker {
+    background-color: whitesmoke;
+    
+}
+
+input {
+    display: block;
+    height: 2em;
+    width: 98%;
+    background: wheat;
+}
+
+select {
+    display: block;
+    height: 2em;
+    width: 100%;
+    background: wheat;
+}
+
+button {
+    display: block;
+    height: 3em;
+    width: 100%;
+    background: lightgray;
+    border-radius: 5%;
+}
+
+ul {
+    list-style: none;
+}

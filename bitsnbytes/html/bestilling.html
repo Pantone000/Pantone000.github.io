@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon"  href="../bilder/favicon.ico">
+    <script src="../js/bestilling.js"></script>
+    <title>Bits And Bytes</title>
+</head>
+
+<body>
+    <header id="title">
+        <h1>Bestilling</h1>
+    </header>
+    <div id="main2">
+        <svg>
+            <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="red" />
+        </svg>
+        <div id="registrering"> 
+            <div id="bestilling" class="vare"></div>
+        </div>
+        <div id="bottom">
+            <ul>
+                <li>Velg vare
+                    <select id="varenr">
+                        <option value="700"> 2TB SSD fra Samsung</option>
+                        <option value="701"> 2TB HDD fra Seagate</option>
+                        <option value="708"> 3.5TB Seagate Ironwolf</option>
+                        <option value="709"> 120GB Kingston SSD</option>
+                        <option value="710"> Crucial 2TB SSD</option>
+                        <option value="711"> 1TB Seagate Skyhawk</option>
+                        <option value="712"> 1TB WD Red </option>
+                        <option value="713"> 32000GB Kingston SSD</option>
+                        <option value="702"> Intel i7 7700k</option>
+                        <option value="703"> Intel i5 6600k</option>
+                        <option value="704"> AMD ryzen3 1200x </option>
+                        <option value="714"> AMD Ryzen 5</option>
+                        <option value="706"> Kingston 16GB RAM</option>
+                        <option value="707"> Hyperx 16GB RAM</option>
+                        <option value="715"> Hyperx 4GB RAM</option>
+                        <option value="716"> Kingston 8GB RAM</option>
+                        <option value="717"> Gigabyte GA-AX370-Gaming K7</option>
+                        <option value="718"> MSI Z370 Gaming Plus</option>
+                        <option value="719"> ASUS ROG STRIX Z370-F Gaming</option>
+                        <option value="720">MSI Z370 Gaming M5</option>
+                    </select>
+                </li>
+                <li> Antall
+                    <label>
+                        <input id="antall" type="number"> </label>
+                </li>
+                <li>Adresse
+                    <label>
+                        <input id="fornavn" type="adresse"> </label>
+                </li>
+                <li>
+                    <form> Bettaling
+                        <div>
+                            <input type="radio" id="contactChoice1" name="contact" value="bitcoin">
+                            <label for="contactChoice1">Bitcoin</label>
+
+                            <input type="radio" id="contactChoice2" name="contact" value="visa">
+                            <label for="contactChoice2">Visa</label>
+
+                            <input type="radio" id="contactChoice3" name="contact" value="mastercard">
+                            <label for="contactChoice3">Mastercard</label>
+                        </div>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+            <center>
+                <form id="skjema">
+                    <br>
+                    <button id="bestill" type="button"> Bestill... </button>
+                </form>
+            </center>
+        </div>
+    </div>
+    <div id="meny">
+        <a href="../index.html">Home</a>
+        <a href="page1.html">Harddisker</a>
+        <a href="page2.html">Prossesorer</a>
+        <a href="page3.html">Ram</a>
+        <a href="page4.html">Motherboard</a>
+        <a href="slideshow.html">Slideshow</a>
+        <a href="bestilling.html">Bestilling</a>
+        <a href="info.html">Info</a>
+        <a href="kundeservice.html">Kundeservice</a>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

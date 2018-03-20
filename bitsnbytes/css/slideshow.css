@@ -1,0 +1,53 @@
+#title {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 26%, rgba(248,181,0,1) 65%, rgba(251,223,147,1) 100%);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+#meny {
+    top: 10%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 26%, rgba(248,181,0,1) 65%, rgba(251,223,147,1) 100%);
+}
+
+#meny a {
+    display: block;
+    height: 30px;
+    width: 150px;
+    border: solid black 2px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: orange;
+    float: left;
+}
+
+#meny a:hover {
+    background: yellow;
+}
+
+#slideshow {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 70%;
+    height: 80%;
+    animation: slide 6s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide {
+    0% {background-image:url("../bilder/gamer.jpg") ;}
+    50% {background-image:url("../bilder/gamer2.jpg") ;}
+    100% {background-image:url("../bilder/gamer3.jpg") ;}
+}
