@@ -19,7 +19,7 @@
     width: 20em;
     background: red;
     height: 25px;
-    animation: lift 2s 3s forwards, liftdown 2s 10s forwards;
+    animation: lift  1s forwards, liftdown 2s 10s forwards;
 }
 
 #heis2 {

@@ -1,0 +1,4 @@
+div {
+    display: grid;
+    grid-template: 10em;
+}

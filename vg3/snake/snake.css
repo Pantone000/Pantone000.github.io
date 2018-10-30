@@ -1,0 +1,72 @@
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+
+#poeng {
+    position: absolute;
+    top: 1%;
+    left: 55%;
+    background-color: aqua;
+    font-size: 3em;
+}
+
+#poeng::before {
+    position: absolute;
+    content: "Poeng";
+    left:-3em;
+}
+
+.apple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+#board{
+    position: relative;
+    background-color: black;
+    color: red;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#omstart {
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    width: 10em;
+    height: 3em;
+}
+
+#snake {
+    top: 0;
+    left: 0;
+    background-image: url("snake.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    transform: scaleX(-1);
+    animation: snake 5s linear infinite;
+}
+
+@keyframes snake {
+    0% {left: 0px; top: 0px; transform: scaleX(-1);}
+    29.9% {left: 500px; top: 0px; transform: scaleX(-1);}
+    30% {left: 500px; top: 0px;transform: scaleX(1);}
+    50% {left: 500px; top: 400px;transform: scaleX(1);}
+    80% {left: 0px; top: 400px;transform: scaleX(1);}
+    100% {left: 0px; top: 0px;transform: scaleX(1);}
+}

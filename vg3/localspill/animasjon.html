@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="animajson.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="texttop">Skank</div>
+        <div id="textbottom">Tank</div>
+        <div id="tank1"> <img src="atank2.png"> </div>
+
+        <button id="loginknap" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Trykk for å logge inn</button>
+
+        <div id="id01" class="modal">
+    
+            <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="atank2red.png" class="avatar">
+                </div>
+    
+                <div class="container">
+                    <label for="uname">
+                        <b>Brukernavn</b>
+                    </label>
+                    <input type="text" placeholder="Brukernavn" name="uname" required>
+                    <button type="submit">Logg inn</button>
+                </div>
+    
+                <div class="container" style="background-color: blue">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+            // Henter "modell"
+            var modal = document.getElementById('id01');
+            // Når brukeren trykker en plass så forsvinner den. 
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+</body>
+</html>

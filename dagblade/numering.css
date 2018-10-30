@@ -1,0 +1,13 @@
+body {
+    counter-reset: oppgave;
+}
+
+div.oppgave{
+counter-reset: deloppgave;
+}
+
+div.oppgave::before{
+    counter-increment: oppgave;
+    content: counter(oppgave)
+}
+

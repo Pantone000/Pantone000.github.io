@@ -1,0 +1,28 @@
+#side1, #side2 {
+    background-color: whitesmoke;
+    min-height: 40em;
+    min-height: 20em ;
+    margin: 1em;
+}
+
+#side1.hidden,
+#side2.hidden {
+    display: none;
+}
+
+#ramme {
+    position: relative;
+    width: 16cm;
+    height: 16cm;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top: 1.2cm;
+}
+
+.faner {
+    position: relative;
+    height: 16px;
+    display: inline-block;
+    border: solid black 1px;
+    top: -20px;
+}

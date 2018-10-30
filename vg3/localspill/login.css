@@ -1,0 +1,136 @@
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*"style" for alle knappene */
+
+button {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    top: 70%;
+    position: relative;
+}
+
+#loginknap {
+    left: -2.5%;
+    animation: fadein 3.8s ;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    99% {opacity: 0;}
+    100%   { opacity: 1; }
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* "style" for avbryt knappen */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Bildet i midten */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* "modell" bakgrunnen */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* innholdet/boksen  */
+
+.modal-content {
+    background-color: blue;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 45%;
+}
+
+/* Lukk knappen  */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/*  Zoom animasjonen */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
