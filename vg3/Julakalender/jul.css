@@ -1,0 +1,46 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    top: 5em;
+    left: 5em;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    background: url("christmasback.png");
+    align-items: center;
+}
+
+.lukka{
+    background: rgba(255, 0, 0, 0.192);
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    text-shadow: black 3px 3px;
+}
+
+#display {
+    top: 0;
+    left: -2000px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#film{
+    display: none;
+    top: 5em;
+    left: 10em;
+    width: 40em;
+    height: 35em;
+    position: absolute;
+    border: solid 1px red; 
+}
+
+/*.lukka:active{
+    height: 200px;
+    width:200px;
+}

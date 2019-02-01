@@ -1,0 +1,27 @@
+#main {
+    background-image: url("hytte.png");
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.hytte {
+    border: 10px solid red;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    position: relative;
+}
+#hytte1 {
+    top: 245px;
+    left: 543px ;
+}
+
+#hytte2 {
+    top: 228px;
+    left: 590px;
+}

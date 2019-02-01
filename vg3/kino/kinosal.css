@@ -1,0 +1,18 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    
+}
+
+.stol {
+    background: red;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+}
+
+.farge {
+    background-color: green;
+}

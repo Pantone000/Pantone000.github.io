@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="befolkning.js"></script>
+    <link rel="stylesheet" href="befolkning.css">
+    <script src="homebar.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <home-bar title="Pyramide"></home-bar>
+    <form action="">
+        <div>Skriv inn Land <select id="land"></select></div>
+        <div>Skriv inn år<input type="number" id="aar"></div>
+        <div><button type="button" id="tegn"></button>Vis pyramide</div>
+    </form>
+    <div id="main">
+        <div id="males" class="pyramide"></div>
+        <div id="females" class="pyramide"></div>
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
