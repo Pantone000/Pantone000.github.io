@@ -1,0 +1,56 @@
+:root {
+    --w: 25px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: calc((var(--w) + 2px) * 12);
+    border: solid gray 1px;
+    left: ;
+}
+
+#tester {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    min-width: 200px;
+}
+
+div.tetro {
+    border: solid 1px white;
+    width: var(--w);
+    height: var(--w);
+}
+
+.tetro.I {
+    background-color: lightskyblue;
+}
+
+.tetro.O {
+    background-color: yellow;
+}
+
+.tetro.J {
+    background-color: blue;
+}
+
+.tetro.L {
+    background-color: orange;
+}
+
+.tetro.S {
+    background-color: green;
+}
+
+.tetro.Z {
+    background-color: red;
+}
+
+.tetro.T {
+    background-color: purple;
+}
+
+div.tetro.V {
+    background-color: whitesmoke;
+}
