@@ -62,7 +62,6 @@ function setup() {
     startSpillet();
     
     function startSpillet(e) {
-        divBoard.addEventListener("click", leggTilBall);
 
         let baller = [];
         for (let i = 0; i < 1; i++) {
@@ -86,7 +85,6 @@ function setup() {
             let vx = 7;
             let vy = 7;
             let ball = new Ball(x, y, vx, vy);
-            let fart = Math.sqrt(vx * vx + vy * vy);
             ball.render();
             divBoard.appendChild(ball.div);
             baller.push(ball);
@@ -94,13 +92,13 @@ function setup() {
 
        
 
-        // ballen er lagra i arrayet baller
+        // animerer ballen
         function animering() {
             for (let i = 0; i < baller.length; i++) {
                 let ball = baller[i];
                 ball.flytt();
                 ball.render();
-                //Problem med hitbox ligger nedenfor en plass fix før innlevering
+                
                 if (ball.x > innerWidth - 150) {
                     if (pos2.y  > ball.y - ball.h && ball.y < pos2.y + 90) {
                         ball.vx = -5;
