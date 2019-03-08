@@ -78,19 +78,6 @@ function setup() {
         
 
         setInterval(animering, 20);
-        //legger til ball
-        function leggTilBall(e) {
-            let x = e.offsetX;
-            let y = e.offsetY;
-            let vx = 7;
-            let vy = 7;
-            let ball = new Ball(x, y, vx, vy);
-            ball.render();
-            divBoard.appendChild(ball.div);
-            baller.push(ball);
-        }
-
-       
 
         // animerer ballen
         function animering() {
@@ -112,6 +99,7 @@ function setup() {
                 }
                 if (keys["w"]) {
                     pos1.y -= 15;
+                    
                     move1();
                 }
                 if (keys["s"]) {
@@ -130,7 +118,7 @@ function setup() {
                     ball.y = 200;
                     ball.x = 1000;
                     ball.vx = -Math.abs(ball.vx);
-                    poeng1 = poeng1 + 1;
+                    poeng1 += 1;
                     divPoeng1.innerHTML = "";
                     divPoeng1.innerHTML = poeng1;
 
