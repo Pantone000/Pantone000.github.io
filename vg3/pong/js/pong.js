@@ -61,14 +61,14 @@ function setup() {
 
     startSpillet();
     
-    function startSpillet(e) {
+    function startSpillet() {
 
         let baller = [];
         for (let i = 0; i < 1; i++) {
-            let x = 50;
-            let y = 50;
-            let vx = 7;
-            let vy = 7;
+            let x = 100;
+            let y = 80;
+            let vx = 5;
+            let vy = 5;
             let ball = new Ball(x, y, vx, vy);
             divBoard.appendChild(ball.div);
             baller.push(ball);
@@ -79,7 +79,7 @@ function setup() {
 
         setInterval(animering, 20);
 
-        // animerer ballen
+        // animerer ballen og beveger klossene, spillerene
         function animering() {
             for (let i = 0; i < baller.length; i++) {
                 let ball = baller[i];
@@ -88,18 +88,21 @@ function setup() {
                 
                 if (ball.x > innerWidth - 150) {
                     if (pos2.y  > ball.y - ball.h && ball.y < pos2.y + 90) {
+                        if (pos2.y < ball.y){
                         ball.vx = -5;
+                        }
                     }
                 }
 
                 if (ball.x < 150) {
                     if (pos1.y > ball.y - ball.h && ball.y < pos1.y + 90) {
-                        ball.vx = 5;
+                        if (pos1.y < ball.y){
+                            ball.vx = 5;
+                        }
                     }
                 }
                 if (keys["w"]) {
                     pos1.y -= 15;
-                    
                     move1();
                 }
                 if (keys["s"]) {
@@ -143,5 +146,3 @@ function setup() {
         }
     }
 }
-
-
